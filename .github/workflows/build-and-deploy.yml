@@ -17,7 +17,7 @@ jobs:
         run: docker build -t laba45:lab45 -f laba4-5/Dockerfile .
 
       - name: Log in to Docker Hub
-        run: docker login -u l1ttleje -p jne3tzNpjB
+        run: docker login -u l1ttleje -p dckr_pat_9Lb9lAf8U0zfckCoxRdtH7wmlIs
         
       - name: IDK
         run: docker tag laba45:lab45 laba45:lab45
