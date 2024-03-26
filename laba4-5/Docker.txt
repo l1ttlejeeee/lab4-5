@@ -1,0 +1,8 @@
+FROM nginx:latest
+
+# Копіюємо файли конфігурації та статичний контент у контейнер
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY static-content /usr/share/nginx/html
+
+# Вказуємо, на якому порті Nginx буде слухати HTTP трафік
+EXPOSE 80
