@@ -1,25 +1,23 @@
-```yaml
- name: Build and Deploy
+name: Build and Deploy
 
- on:
-   push:
-     branches:
-       - main
+on:
+  push:
+    branches:
+      - main
 
- jobs:
-   build:
-     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-     steps:
-       - name: Checkout Repository
-         uses: actions/checkout@v2
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-       - name: Build Docker image
-         run: docker build -t laba45:lab45 .
+      - name: Build Docker image
+        run: docker build -t laba45:lab45 .
 
-       - name: Log in to Docker Hub
-         run: docker login -u l1ttleje -p jne3tzNpjB
+      - name: Log in to Docker Hub
+        run: docker login -u l1ttleje -p jne3tzNpjB
 
-       - name: Push Docker image to Docker Hub
-         run: docker push laba45:lab45
- ```
+      - name: Push Docker image to Docker Hub
+        run: docker push laba45:lab45
