@@ -20,7 +20,7 @@ jobs:
         run: docker login -u l1ttleje -p jne3tzNpjB
         
       - name: IDK
-        run: docker tag laba45 laba45:lab45
+        run: docker tag lab45 laba45:lab45
         
       - name: Push
         run: docker push laba45:lab45
