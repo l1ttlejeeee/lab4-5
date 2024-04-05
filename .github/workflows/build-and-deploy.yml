@@ -19,8 +19,5 @@ jobs:
       - name: Log in to Docker Hub
         run: docker login -u l1ttleje -p dckr_pat_9Lb9lAf8U0zfckCoxRdtH7wmlIs
         
-      - name: IDK
-        run: docker tag laba45:lab45 laba45:lab45
-        
       - name: Push
         run: docker push l1ttleje/laba45:lab45
